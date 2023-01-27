@@ -1,11 +1,12 @@
-###Pascal triangle
-a = 1
-b = 1
-prevRow = []
-prevRow.append([1,1])###second row
-rows = int(input("Enter the number of rows: "))
-print("1")
-for k in range(1,rows):
-    for m in range(k):
-        r = prevRow[m] + prevRow[m+1]
-        
+from math import factorial
+ 
+# input for the number of rows
+n = int(input("Rows:")
+for i in range(n):
+    for j in range(n-i+1):
+        # for left spacing
+        print(end=" ")
+    for j in range(i+1):
+        print(factorial(i)//(factorial(j)*factorial(i-j)), end=" ")
+    # for new line
+    print()
